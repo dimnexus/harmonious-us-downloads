@@ -1,6 +1,7 @@
 {
   "format": 1,
   "channel": "alpha",
+  "launcher": { "version": "0.4.0", "windowsSetup": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncherSetup-Windows-0.4.0.exe", "sha256": "103f65f0f7cbb33fcc2946b6f4680f779b7f922e0e73ba9995ea35ec97c0d738", "bytes": 1030656}, "linuxBundle": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncher-Linux-0.4.0.tar.gz", "sha256": "38be13bb1208ec337f1a31e8576d88596b8555abb7788c6995e0fa41ae28958e", "bytes": 7792} },
   "version": "0.6.2-alpha",
   "buildNumber": 62,
   "protocol": 3,
@@ -9,8 +10,7 @@
   "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/RELEASE_NOTES.md",
   "launcherMinimumVersion": "",
   "publishedAtUtc": "2026-10-08T15:29:13Z",
-  "windows": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Windows-x64-0.6.2-alpha.zip", "sha256": "8d80a2968eec3b7db620a8dd35cf0d49397a2c54384450ba7372c35155b66b3e", "bytes": 112333515 },
-  "linux": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Linux-x64-0.6.2-alpha.tar.gz", "sha256": "c88f80dde0460e9d92ad709c412383b27608f94751b7a9f7ae9b006b8c54a26b", "bytes": 115759298 },
-  "macos": { "url": "", "sha256": "", "bytes": 0 },
-  "launcher": { "version": "0.3.0", "windowsSetup": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncherSetup-Windows-0.3.0.exe", "sha256": "0670602fc6ee0af40763451cf094f328564487151229bc03e5997c58f9345ae5", "bytes": 55808 }, "linuxBundle": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncher-Linux-0.3.0.tar.gz", "sha256": "165d36b107e62a656c248d7cc73ead0ef1596f8089df8bedd1c222d64e5e8b8f", "bytes": 4959 } }
+  "windows": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Windows-x64-0.6.2-alpha.zip", "sha256": "8d80a2968eec3b7db620a8dd35cf0d49397a2c54384450ba7372c35155b66b3e", "bytes": 112333515},
+  "linux": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Linux-x64-0.6.2-alpha.tar.gz", "sha256": "c88f80dde0460e9d92ad709c412383b27608f94751b7a9f7ae9b006b8c54a26b", "bytes": 115759298},
+  "macos": {"url": "", "sha256": "", "bytes": 0}
 }
