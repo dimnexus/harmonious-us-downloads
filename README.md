@@ -29,6 +29,12 @@ The launcher verifies downloaded files before installing them and is designed to
 
 Linux client packages and launcher files will also appear in **Releases** as they are published.
 
+### System requirements
+
+Current provisional Alpha requirements for Windows and Linux are available in **[SYSTEM_REQUIREMENTS.md](SYSTEM_REQUIREMENTS.md)**.
+
+The current targets are intentionally modest: **4 GB RAM / 2 GB free space minimum** and **8 GB RAM / 4 GB free space recommended**. They will be revised as the game grows and wider hardware testing is completed.
+
 ---
 
 ## What is Harmonious Us?
