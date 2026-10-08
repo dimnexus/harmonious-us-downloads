@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "channel": "alpha",
+  "version": "0.6.0-alpha",
+  "buildNumber": 60,
+  "protocol": 1,
+  "minimumCompatibleVersion": "0.6.0-alpha",
+  "releaseNotes": "Six planets on one server, each its own world: land, plants, rock, animals, sky, water and weather. Five can be reached in this build; the sixth, Astraea, exists but no vessel can be launched for it yet.\nBuild a space program, load a colony vessel and cross to another world without leaving the server.\nHeat, cold and airlessness are real: shade, a roof, a fire and what you carry decide how long you last.\nHunting and a first crop work online. Each planet gives materials found nowhere else.\nYou make your character the first time you join a server, and you start with an empty pack.",
+  "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/RELEASE_NOTES.md",
+  "launcherMinimumVersion": "",
+  "publishedAtUtc": "2026-10-08T05:00:40Z",
+  "windows": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUs-Windows-x64-0.6.0-alpha.zip", "sha256": "a54f6aec8147ac63b6706aa6a8fad159a07cc7cdcad3074291a383574adb9e1a", "bytes": 112237234 },
+  "linux": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUs-Linux-x64-0.6.0-alpha.tar.gz", "sha256": "a487ef11460152a54fab75f9cec75462cccf467b6d43325be85c977b1dcc3cf6", "bytes": 115668277 },
+  "macos": { "url": "", "sha256": "", "bytes": 0 },
+  "launcher": { "version": "0.3.0", "windowsSetup": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUsLauncherSetup-Windows-0.3.0.exe", "sha256": "195f82ffe023c091beb0410418693299cba47ec250be76f03bac14e08dc6cb2b", "bytes": 55808 }, "linuxBundle": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUsLauncher-Linux-0.3.0.tar.gz", "sha256": "a966f1628d7d26ee7544f3e6d50b33f60f7df2891ac9166d7a4d7378004eae1a", "bytes": 4959 } }
+}
