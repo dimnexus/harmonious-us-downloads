@@ -1,16 +1,16 @@
 {
   "format": 1,
   "channel": "alpha",
-  "version": "0.6.0-alpha",
-  "buildNumber": 60,
-  "protocol": 1,
-  "minimumCompatibleVersion": "0.6.0-alpha",
-  "releaseNotes": "Six planets on one server, each its own world: land, plants, rock, animals, sky, water and weather. Five can be reached in this build; the sixth, Astraea, exists but no vessel can be launched for it yet.\nBuild a space program, load a colony vessel and cross to another world without leaving the server.\nHeat, cold and airlessness are real: shade, a roof, a fire and what you carry decide how long you last.\nHunting and a first crop work online. Each planet gives materials found nowhere else.\nYou make your character the first time you join a server, and you start with an empty pack.",
-  "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/RELEASE_NOTES.md",
+  "version": "0.6.1-alpha",
+  "buildNumber": 61,
+  "protocol": 2,
+  "minimumCompatibleVersion": "0.6.1-alpha",
+  "releaseNotes": "On a server the Tab panel now has all seven pages of a solo game: Pack, Craft, Research, Professions, Settlement, Planet, Journal.\nResearch and professions are real on a server: they belong to your character there, and they decide what you can make and how well.\nThe animals of a server are the server's: everyone sees the same animals, and a hunt or a fight is settled by the server.\nCrouch (Ctrl or C) to stalk: animals let you come much closer. Other players see you crouch. The bow works on a server.\nEscape on a server opens the full menu with Settings; the official server is already in the list; windowed is a real window.",
+  "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.1-alpha/RELEASE_NOTES.md",
   "launcherMinimumVersion": "",
-  "publishedAtUtc": "2026-10-08T05:00:40Z",
-  "windows": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUs-Windows-x64-0.6.0-alpha.zip", "sha256": "a54f6aec8147ac63b6706aa6a8fad159a07cc7cdcad3074291a383574adb9e1a", "bytes": 112237234 },
-  "linux": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUs-Linux-x64-0.6.0-alpha.tar.gz", "sha256": "a487ef11460152a54fab75f9cec75462cccf467b6d43325be85c977b1dcc3cf6", "bytes": 115668277 },
+  "publishedAtUtc": "2026-10-08T09:44:23Z",
+  "windows": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.1-alpha/HarmoniousUs-Windows-x64-0.6.1-alpha.zip", "sha256": "b21629d9b07188778577208331f481f5272a7bc23f5780aa3c79ed2477f5f255", "bytes": 112277082 },
+  "linux": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.1-alpha/HarmoniousUs-Linux-x64-0.6.1-alpha.tar.gz", "sha256": "669f30b9cb6a2d5e50cc00de4d9612b0755f5e09319f46694d60fd053b254ab4", "bytes": 115703676 },
   "macos": { "url": "", "sha256": "", "bytes": 0 },
-  "launcher": { "version": "0.3.0", "windowsSetup": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUsLauncherSetup-Windows-0.3.0.exe", "sha256": "195f82ffe023c091beb0410418693299cba47ec250be76f03bac14e08dc6cb2b", "bytes": 55808 }, "linuxBundle": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.0-alpha/HarmoniousUsLauncher-Linux-0.3.0.tar.gz", "sha256": "a966f1628d7d26ee7544f3e6d50b33f60f7df2891ac9166d7a4d7378004eae1a", "bytes": 4959 } }
+  "launcher": { "version": "0.3.0", "windowsSetup": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.1-alpha/HarmoniousUsLauncherSetup-Windows-0.3.0.exe", "sha256": "f418ea6810e54a627998cdd7a579b83ca405e3e6f627e35c4d19faaa48199f3e", "bytes": 55808 }, "linuxBundle": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.1-alpha/HarmoniousUsLauncher-Linux-0.3.0.tar.gz", "sha256": "50b8d2160a9074fd1959100de5415bba4f3e35f38f154ec0f96fb6d4d75fae7a", "bytes": 4959 } }
 }
