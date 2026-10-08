@@ -1,16 +1,16 @@
 {
   "format": 1,
   "channel": "alpha",
-  "launcher": { "version": "0.4.0", "windowsSetup": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncherSetup-Windows-0.4.0.exe", "sha256": "103f65f0f7cbb33fcc2946b6f4680f779b7f922e0e73ba9995ea35ec97c0d738", "bytes": 1030656}, "linuxBundle": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUsLauncher-Linux-0.4.0.tar.gz", "sha256": "38be13bb1208ec337f1a31e8576d88596b8555abb7788c6995e0fa41ae28958e", "bytes": 7792} },
-  "version": "0.6.2-alpha",
-  "buildNumber": 62,
+  "launcher": { "version": "0.4.0", "windowsSetup": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.3-alpha/HarmoniousUsLauncherSetup-Windows-0.4.0.exe", "sha256": "89834c6b84b8aabae4ae1a93472219c8b5da5a73a0333409565cc2e5f4449cb0", "bytes": 1030656 }, "linuxBundle": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.3-alpha/HarmoniousUsLauncher-Linux-0.4.0.tar.gz", "sha256": "87e56e506a6fbd68ea44b6e1c9924adfd76892867c5ed2735f8ebd70f280576b", "bytes": 7777 } },
+  "version": "0.6.3-alpha",
+  "buildNumber": 63,
   "protocol": 3,
   "minimumCompatibleVersion": "0.6.2-alpha",
-  "releaseNotes": "Everything you could do alone you can now do on a server: fish, dig, shovel snow, read the map, search ruins, follow objectives, and farm properly.\nThe shovel was reworked. Left button digs, right button fills with the material you choose. Holes can be filled level again. Snow clears in a patch under the shovel, not across the landscape.\nYou can pour water into a hollow you dug, and it stays there as water.\nGrass no longer grows through planters, crop plots, barrels or anything else you place.",
-  "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/RELEASE_NOTES.md",
+  "releaseNotes": "Fixed: being disconnected a few seconds after joining a server.\nAn online game keeps running when you switch to another window, so alt-tabbing no longer drops you.\nThe server waits longer before giving up on a player who has gone quiet.",
+  "releaseNotesUrl": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.3-alpha/RELEASE_NOTES.md",
   "launcherMinimumVersion": "",
-  "publishedAtUtc": "2026-10-08T15:29:13Z",
-  "windows": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Windows-x64-0.6.2-alpha.zip", "sha256": "8d80a2968eec3b7db620a8dd35cf0d49397a2c54384450ba7372c35155b66b3e", "bytes": 112333515},
-  "linux": {"url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.2-alpha/HarmoniousUs-Linux-x64-0.6.2-alpha.tar.gz", "sha256": "c88f80dde0460e9d92ad709c412383b27608f94751b7a9f7ae9b006b8c54a26b", "bytes": 115759298},
-  "macos": {"url": "", "sha256": "", "bytes": 0}
+  "publishedAtUtc": "2026-10-08T21:42:23Z",
+  "windows": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.3-alpha/HarmoniousUs-Windows-x64-0.6.3-alpha.zip", "sha256": "9a0c1f44cbf25ca9b4b844d03766e7967c796dc258ac34dc21087e773a1ed85e", "bytes": 112335413 },
+  "linux": { "url": "https://github.com/dimnexus/harmonious-us-downloads/releases/download/0.6.3-alpha/HarmoniousUs-Linux-x64-0.6.3-alpha.tar.gz", "sha256": "058a687e3ce2424d8e533858806fc84f64b16759bb3d2bb1e598e36441b48c5c", "bytes": 115764369 },
+  "macos": { "url": "", "sha256": "", "bytes": 0 }
 }
