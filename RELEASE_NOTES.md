@@ -1,64 +1,143 @@
-# Harmonious Us 0.6.6-alpha — Building + Terrain Interaction
+# Harmonious Us 0.6.7-alpha — Survival, Progression & Civilization Foundation
 
-Build 66, channel alpha, **protocol 3** (unchanged). A 0.6.6 server accepts games from 0.6.2-alpha onwards, and a 0.6.6 game plays on an older server: nobody is locked out by this update. Nothing in the save format changed.
+Build 67, channel alpha, **protocol 3** (unchanged). A 0.6.7 server accepts games from 0.6.2-alpha onwards, and a 0.6.7 game plays on an older server. An older game on a 0.6.7 server plays as before but cannot see the new food, pages or settlements: update to use them.
 
-This update is about building and digging on a server, and when you **Play alone** from the multiplayer screen - which is the same game with the server on your own computer. A game started with NEW GAME on the title screen still uses its older builder, which is as it was.
+Everything here is for the game a server runs - a shared server, and **Play alone** from the multiplayer screen, which is the same game with the server on your own computer. A game started with NEW GAME on the title screen is the older solo game and is unchanged.
 
 ## In short
 
-- The turn key turns a roof, and roofs line up.
-- The build panel tells you where the piece will go before you click.
-- The "next snap point" key no longer sticks.
-- Undo reaches back through your last placements, not only the last one.
-- The remove key takes the piece you are looking at, and tells you which first.
-- Back is one step back.
-- A foundation stands on the floor of what you have dug - a hollow, or a room dug deep under the land - and walls, doors, stairs and ceilings go on it.
-- Nothing is built into ground that has not been dug away.
-- A world with a lot of digging in it reaches everyone who joins.
+- One placed piece can be taken down by itself. Snapping no longer locks pieces together.
+- Food is worth cooking: meat and fish off the fire, stews, bread and tea, each doing something of its own.
+- Raw meat and fish can be eaten, barely. An empty stomach now wears your health down - slowly, and only so far.
+- You learn by doing: the first time you make, cook, find, build or harvest something gives research.
+- You choose a focus - builder, farmer, provider, woodworker, miner, smith or researcher.
+- Carried tools do something: knife, sickle, hatchet, saw, hoe.
+- Settlements: found one, invite players, three roles, land that is your members' alone, shared storage.
+- Trade between two players, safely: nothing changes hands until both agree to the same table.
+- Jobs: ask for something and put up a reward; whoever brings it is paid at once.
+- Group chat and settlement chat.
+- Water you can cast a line into always gives a fish in the end.
 
-## Roofs
+## Building: one piece at a time
 
-- **[R] turns a roof.** A quarter turn at a time, back with Shift. Before, the turn key did nothing to a roof: the only way to turn one was "next snap point" ([K]), which said nothing about turning.
-- **Roofs line up.** The next roof you place lies the way you turned the last one, whichever way its own floor happens to face. Two rooms side by side get one ridge line without touching a key. Before, each roof took the heading of the floor under it, and a floor's heading depended on which edge it had been extended from - neighbours could come out a quarter turn apart.
-- The key strip says "Turn roof" while a roof is selected.
+- **Any piece can be taken down by itself.** A wall from a row, one floor tile, one roof, the stairs, a foundation with walls standing on its edges. Before, a piece with anything snapped to it could not be removed at all - and the first foundation, which everything was snapped off, could never go.
+- **What was snapped to it stays where it is.** If a neighbour offers the same place - the wall on the edge two foundations share - it is handed to that neighbour. Otherwise it stands on its own until you build there again, and is then snapped to what you built.
+- **Only a thing that cannot be there without its host stops a removal, and it is named:** "Remove the Door first." A door in its doorway, a hatch, something mounted on the wall, something set on a table, a crate or a bench standing on the floor.
+- **The piece is marked before it goes.** The first press of the remove key ([X], or X on a controller) marks the piece under the crosshair in red and names it on the panel; the second press takes that piece and no other. [Delete] stays in demolish mode for several pieces.
+- **The crosshair decides.** The piece the crosshair is on is the one marked - a door only when you aim through its opening.
+- What comes back is that one piece's share, once.
 
-## Knowing what will happen
+## Food and hunger
 
-- **The build panel says where the preview is.** "Ready: on the north edge of the Foundation", "Ready: over the Foundation, turned to face east", "Ready: in the Doorway Wall", "Ready: on the dug ground". Before, it said only "Ready to place".
-- **[K] is for where you press it.** It steps past the nearest snap point at the place you are aiming; aim somewhere else and the nearest point is offered again, as it is after placing a piece or choosing another. Before, one press stayed in force until build mode was closed, and every later preview went to the second-nearest place - a wall on the wrong edge, a roof on the wrong room.
+- **Cooked Meat** and **Cooked Fish**: one raw piece, standing at a lit campfire or a Cooking Station. A cooked meal fills nearly four times what the raw meat does.
+- **Raw meat and raw fish can be eaten.** They fill an eighth of a stomach and sit badly for a minute (stamina comes back slowly). There is no random illness.
+- **Dried Meat** and **Dried Fish** come off the drying rack and out of the smoker (they used to become plain "Food"). Food for the road, made while you are away.
+- With **Cooking** researched (tier 1, 5 points):
+  - **Hearty Stew** - meat, food, water, a bowl. Fills almost the whole stomach; wounds mend three times as fast for eight minutes.
+  - **Fish Stew** - fish, food, water, a bowl. Stamina comes back half as fast again for eight minutes.
+  - **Bread** - grain and water in an Oven, two loaves.
+  - **Herbal Tea** - leaves and water over a fire, in a cup. What you do teaches you a quarter more for ten minutes.
+- The Craft page says what a dish does before you cook it.
+- **Hunger is slower**: a full stomach lasts about forty minutes at rest, twenty-five at hard work.
+- **Foraged food and a harvest fill a quarter** of a stomach (it was two fifths): what you pick keeps you going; what you cook is a meal.
+- **If your stomach was already empty** when this update arrived - hunger did nothing to health before - you will see your health wearing down until you eat. It stops at a third.
+- **Starving wears health down** - slowly, to a third, and no further. It never brings you down by itself; it makes the next fall or bite the dangerous one. The line above the hunger bar says so, and says what your last meal left you with.
 
-## Putting a mistake right
+## Learning by doing
 
-- **Undo reaches back.** [U] takes back your placements of the last fifteen seconds, newest first, each for all it cost; the key strip shows how many it can still take ("Undo (3)"). Before, it remembered one.
-- **[X] takes what you are looking at.** Look at a door and it is the door that goes, not the wall it hangs in. Before, it took whichever of your pieces had its origin nearest your aim; a door, its doorway wall and the edge of the floor under them share one origin, and which went was chance.
-- **The key strip names it.** "Remove: Door", "Remove: Wall" - before you press the key.
-- **Back is one step back.** [Esc] (B on a controller) leaves a thing you were moving where it was, or puts demolish mode away, or takes the pointer back to aiming - and only then closes build mode. Before, it closed build mode from wherever you were. In link mode it used to open the game menu as well; now it closes link mode and nothing else.
+- **Discoveries.** The first time your character brings in a new material, makes a recipe, cooks a dish, builds a kind of workstation, harvests a crop, founds a settlement, posts or fills a job, the server gives a little research and says so. Once each. Never for repeating anything.
+- Research Stations, profession levels, specimens and ruins give research as before.
+- Two technologies of the online game's own: **Cooking** and **Organization** (posting jobs).
 
-## Building and dug ground
+## A focus
 
-- **A foundation stands on the ground as it is now.** In a hollow you have dug, it goes on the dug floor, below the land. Standing in a room you have dug deep under the land, it goes on that room's floor. Walls, a doorway, a door, stairs and a ceiling go on it as anywhere else. Before, building measured from the land as it was made: in a hollow the foundation was put up where the ground used to be, and drawn as a block rising out of the hole.
-- **Nothing is built inside solid ground.** A floor or foundation that would lie in ground that has not been dug away - run from a sunken room into the side of its hollow, on from an underground room into rock, or along a hillside into the rise - is refused, in the preview and by the server, with the reason: "The ground is in the way - dig it out first, or build higher". A wall is refused where the room has not been dug to the wall's height.
-- **Digging and filling are as they were,** and worth knowing: the shovel digs soft ground and, with its second use, puts ground back; the pickaxe goes through rock; a shaft goes as deep as you like to dig it, and from its foot you can dig sideways - the ground above stays where it is. Filling is paid for in the ground you carry, so what you dug by mistake goes back. The ground a building stands on cannot be dug out from under it.
+- On the Professions page, choose what you mean to be good at. You learn that profession half as fast again, and it is worth one thing:
+  - **Provider** - one more portion from every dish you cook.
+  - **Farmer** - one more food from every harvest.
+  - **Woodworker** - one more wood from every swing at a tree.
+  - **Miner** - one more from every strike at rock or ore.
+  - **Builder** - one less of its main material for everything you build.
+  - **Smith** - one more from everything you make at a furnace.
+  - **Researcher** - research costs 15 % less.
+- Nobody is locked out of anything, and a character alone can still do everything.
+- It can be changed. A change takes ten minutes to settle in.
+
+## Tools that do something
+
+Carried in the pack, not held:
+- **Knife** - one more cut of meat from a carcass.
+- **Sickle** - one more from every plant gathered.
+- **Hatchet** - one more wood from every branch and shrub.
+- **Saw** - a second board from every lumber craft.
+- **Hoe** - one more seed from every harvest.
+- **Fletched Arrows** - a second recipe for arrows: wood, bone and feathers make eight (needs Hunting & Fletching). Feathers had no use on a server before.
+
+## Settlements
+
+- **Found one** from the menu's Settlement tab, standing beside something you have built. It has a name, a home where you stand, and land: the ground 60 m around the home.
+- **Invite** players; they accept or decline from the same tab, whether or not you are online together.
+- **Three roles.** A member builds on the land, uses the shared storage, fills jobs and speaks in the settlement's chat. An officer also invites, removes members, takes down any of the settlement's pieces and withdraws its jobs. The founder also makes officers, renames, hands over, decides two things members may do, and can disband.
+- **The land is its members'.** Someone who is not a member cannot build or dig there - except beside something of their own that already stood there.
+- **What a member builds on the land is the settlement's.** Its builder can always take it down; so can an officer.
+- **Leaving, or being removed, takes nothing from you**: what you built is still yours.
+- Disbanding gives every piece back to its builder alone and returns the reward of every open job to whoever posted it.
+- Outside any settlement nothing has changed.
+
+## Shared storage
+
+- Any crate, chest, shelf or other container that is the settlement's is **shared storage**: every member can put in and take out, and nobody else can open it.
+- The founder can keep taking out for officers; members can still put in.
+- Looking at one says whose it is.
+
+## Trade
+
+- Stand together (within 8 m). One asks - from the People page, or `/trade name` in chat - the other accepts.
+- Each puts things from their pack on the table and sees the other's.
+- **Nothing leaves a pack until both have agreed to the same table.** Changing either side takes both agreements back.
+- When both agree, everything moves in one step - or, if something no longer holds (an item spent, a pack that cannot carry it), nothing moves and you are told why.
+- Walking apart, leaving the server or collapsing ends the trade with nothing moved.
+
+## Jobs
+
+- With **Organization** researched, post a job from the Jobs page: "bring this many of that here" for a reward from your pack. The reward leaves your pack at once and is held by the job.
+- Anyone who can see it, standing where it was posted with the goods, delivers: goods in, reward out, at once.
+- You collect what was brought where you posted it.
+- A job can be for your settlement's members only. A job can be withdrawn; its reward waits for you where you posted it.
+
+## Chat and groups
+
+- **Group**: invite players from the People page (or `/group name`). `/g message` speaks to the group, wherever its people are. A group lasts while you are online.
+- **Settlement**: `/s message` speaks to every member online, wherever they are.
+- Nearby chat and whispers are as they were.
+
+## Fishing
+
+- **Fishable water always gives something.** Where none of the water's own fish is near your line, a small fish takes it after the first wait - one, and not again for a minute and a half. A pond the world made with no fish in it used to give nothing, ever.
+
+## Objectives
+
+- New objectives lead to the new things: cook a meal, choose a focus, found or join a settlement, use shared storage, post a job.
 
 ## On a server
 
-- **A world with a lot of digging reaches everyone.** When a player joined, the server could say more at once than the connection would take, and what did not fit was lost without a word - with enough dug ground in a world, a joining player could be left with none of it. Now nothing is lost: what cannot go at once waits its turn and goes in order.
-- Every placement, removal, door and dig is still the server's decision; the preview is only a preview.
-- What is built and what is dug survives the server being stopped and started, and is the same for every player. A door opened by one player is open for the other.
+- Every one of these is the server's decision: membership, roles, whose land a spot is, what is on a trade table, what a job holds, what a meal does. A game only asks.
+- A trade and a filled job are saved the moment they happen.
+- Settlements, jobs, focus, research and discoveries survive the server being stopped and started.
 
 ## Playing alone
 
-- **Play alone** on the multiplayer screen is this same builder and this same ground: the game runs the server on your own computer, saves when you leave, and has your world as you left it when you come back. Everything above applies to it.
+- **Play alone keeps your character.** Coming back to your own world, you are the character you were: the same pack, research, professions, focus and settlement. Before, the game looked your identity up under an address that was different every time your world started, did not find it, and made you a new character - yesterday's pack and research belonged to somebody else, and so did the house.
+- Play alone has all of the rest. A settlement of one still gives you land and storage that are yours; you can post jobs to yourself as reminders, though there is nobody to fill them.
 
 ## Known limits
 
-- **NEW GAME's builder is unchanged.** A game started from NEW GAME on the title screen uses a different, older builder (drawn walls, rectangle floors and roofs, Quick Roof). None of this update's fixes apply to it, and it still refuses to build over a hollow or a tunnel. To build with everything in these notes on your own, use Play alone.
-- A roof can still be placed over a floor that has no walls.
-- A wall on a floor's edge always faces outward from that floor; it cannot be flipped.
-- A group of the build menu shows ten pieces to the number keys; the rest are reached with the wheel or the pointer.
-- There is no ladder or stair that follows a shaft down: a deep room is reached by the way you dug to it.
-- Ceilings do not fall and need no supports.
-- A game older than 0.6.6 on a 0.6.6 server previews with the old rules: its preview can show a foundation in a hollow at the old height, and the server then places it on the dug floor.
-- Unchanged from 0.6.5-alpha: small ponds can hold no fish; typing needs a keyboard; Windows still shows "unknown publisher" for the game and the launcher.
-
-The dedicated server is not a public download.
+- **NEW GAME is unchanged**: none of this is in the older solo game.
+- **Play alone worlds from before this update**: you return as the character you played last. Characters that earlier sessions left behind are still in the save, but what they carried is not given to you, and the pieces they built are not yours to take down. Putting those together is planned with the save work in 0.6.9.
+- An ordinary crate that is not a settlement's can still be opened by anyone, as before. Found a settlement to shut your stores.
+- Six craftable tools still do nothing: Mallet, Chisel, Shears, Crowbar, Hand Drill, Wrench. Most kitchenware is still decoration.
+- Hunting, fishing and cooking all teach the same profession (Survival).
+- Jobs are deliveries only: there is no "build this" job, and one player fills a job whole.
+- There is no currency: trade and jobs are barter.
+- A settlement's land is a fixed circle; its home cannot be moved.
+- What stood on a piece that was taken down stays in the air until something is built under it again.
+- An older game (0.6.6) on a 0.6.7 server does not show the new food it carries.
