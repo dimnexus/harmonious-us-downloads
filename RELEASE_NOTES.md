@@ -1,61 +1,64 @@
-# Harmonious Us 0.6.5-alpha — Wildlife & Ecology 2.0
+# Harmonious Us 0.6.6-alpha — Building + Terrain Interaction
 
-Build 65, channel alpha, **protocol 3** (unchanged). A 0.6.5 server accepts games from 0.6.2-alpha onwards, and a 0.6.5 game plays on an older server: nobody is locked out by this update. (An older game on a 0.6.5 server is not shown the animals it has no body for.)
+Build 66, channel alpha, **protocol 3** (unchanged). A 0.6.6 server accepts games from 0.6.2-alpha onwards, and a 0.6.6 game plays on an older server: nobody is locked out by this update. Nothing in the save format changed.
+
+This update is about building and digging on a server, and when you **Play alone** from the multiplayer screen - which is the same game with the server on your own computer. A game started with NEW GAME on the title screen still uses its older builder, which is as it was.
 
 ## In short
 
-- The wild is fuller, and each animal is where it belongs: 48 kinds, where there were 18.
-- Birds fly.
-- Every animal can be hunted, dies, leaves remains and yields something that is used.
-- The sea has its own life, and what hunts in the water goes for swimmers, not for people on the shore.
-- The other planets have gained real animals of their own.
-- On a server, every player has animals about them: players far apart no longer share one planet-wide number.
+- The turn key turns a roof, and roofs line up.
+- The build panel tells you where the piece will go before you click.
+- The "next snap point" key no longer sticks.
+- Undo reaches back through your last placements, not only the last one.
+- The remove key takes the piece you are looking at, and tells you which first.
+- Back is one step back.
+- A foundation stands on the floor of what you have dug - a hollow, or a room dug deep under the land - and walls, doors, stairs and ceilings go on it.
+- Nothing is built into ground that has not been dug away.
+- A world with a lot of digging in it reaches everyone who joins.
 
-## New animals
+## Roofs
 
-- **On Origin:** buffalo and wild horses on the open plains; camels, meerkats and ostriches on dry ground; penguins and walrus on the cold northern shores; the panda, rarely, in forest and highland; eagles over highland and forest, vultures over dry and blighted ground, doves in the meadows, gulls on the sea's shores.
-- **In Origin's sea:** sharks in temperate and warm deep water, orcas in cold deep water, whales where the water is deep enough for them, squid; and in the shallows octopus, seahorses, jellyfish and, on the bed, starfish.
-- **On the other planets**, each where that planet's ground has it: camel, meerkat, ostrich and vulture on Khepra; penguin, walrus, orca and whale on Nivara; gull, flamingo, shark, whale, octopus, squid, seahorse, jellyfish and starfish on Pelagos; tiger, gorilla, chimpanzee, tapir, anteater, capybara, crocodile, parrot and toucan on Viridia. Each planet's own creatures - the Dune Strider, the Frost Elk and the rest - are still there.
+- **[R] turns a roof.** A quarter turn at a time, back with Shift. Before, the turn key did nothing to a roof: the only way to turn one was "next snap point" ([K]), which said nothing about turning.
+- **Roofs line up.** The next roof you place lies the way you turned the last one, whichever way its own floor happens to face. Two rooms side by side get one ridge line without touching a key. Before, each roof took the heading of the floor under it, and a floor's heading depended on which edge it had been extended from - neighbours could come out a quarter turn apart.
+- The key strip says "Turn roof" while a roof is selected.
 
-## Where animals live
+## Knowing what will happen
 
-- Each animal is placed by the ground, the cold and the water it belongs to. The polar bear keeps to snow and bare cold rock, the reindeer to the far north, the seal to cold shores, the goose to open ground by fresh water.
-- An animal of the sea stays out of lakes and rivers, and each needs water as deep as its size does: a whale is never in a pond.
-- A neighbourhood holds only so many animals, only so many of one kind, and only a few that come for a player unprovoked. Bare and frozen ground holds fewer than woodland and meadow.
+- **The build panel says where the preview is.** "Ready: on the north edge of the Foundation", "Ready: over the Foundation, turned to face east", "Ready: in the Doorway Wall", "Ready: on the dug ground". Before, it said only "Ready to place".
+- **[K] is for where you press it.** It steps past the nearest snap point at the place you are aiming; aim somewhere else and the nearest point is offered again, as it is after placing a piece or choosing another. Before, one press stayed in force until build mode was closed, and every later preview went to the second-nearest place - a wall on the wrong edge, a roof on the wrong room.
 
-## Behaviour
+## Putting a mistake right
 
-- **Flight.** A startled goose takes to the air, crosses water, keeps away while it is followed and comes down again on ground it can stand on. Eagles, vultures, doves and gulls go up by themselves. A bird killed in the air falls.
-- **Small animals are animals.** The squirrel, the rat, the crab, the beaver, the seal, the snake and the dolphin could only run away before and nothing could touch them; now they can be hurt, they die, and they yield.
-- **A snake defends itself.** It leaves you alone at a distance, strikes if you crowd it, and lets go when you step back.
-- **Hunters of the water** - the shark, the orca - go for someone who is in the water. On the beach, on a bridge or in a boat you are left alone, and getting out ends the chase.
-- **The legs keep up with the ground.** Small animals no longer slide over the ground faster than their legs move.
+- **Undo reaches back.** [U] takes back your placements of the last fifteen seconds, newest first, each for all it cost; the key strip shows how many it can still take ("Undo (3)"). Before, it remembered one.
+- **[X] takes what you are looking at.** Look at a door and it is the door that goes, not the wall it hangs in. Before, it took whichever of your pieces had its origin nearest your aim; a door, its doorway wall and the edge of the floor under them share one origin, and which went was chance.
+- **The key strip names it.** "Remove: Door", "Remove: Wall" - before you press the key.
+- **Back is one step back.** [Esc] (B on a controller) leaves a thing you were moving where it was, or puts demolish mode away, or takes the pointer back to aiming - and only then closes build mode. Before, it closed build mode from wherever you were. In link mode it used to open the game menu as well; now it closes link mode and nothing else.
 
-## What animals yield
+## Building and dug ground
 
-- No new materials: nothing in the game is made of fur, scales or shell, so none was added to fill a pack. Meat and fish are cooked; hide is tanned; bone and feathers make fertilizer and arrows; antler makes a trophy.
-- Crab, squid and octopus are food, as fish is.
-- The seahorse, the jellyfish and the starfish are **specimens**: nothing for the pack, and research notes each time one is studied.
-- Whales and dolphins are animals like the others. They yield what a large animal yields, and no more.
+- **A foundation stands on the ground as it is now.** In a hollow you have dug, it goes on the dug floor, below the land. Standing in a room you have dug deep under the land, it goes on that room's floor. Walls, a doorway, a door, stairs and a ceiling go on it as anywhere else. Before, building measured from the land as it was made: in a hollow the foundation was put up where the ground used to be, and drawn as a block rising out of the hole.
+- **Nothing is built inside solid ground.** A floor or foundation that would lie in ground that has not been dug away - run from a sunken room into the side of its hollow, on from an underground room into rock, or along a hillside into the rise - is refused, in the preview and by the server, with the reason: "The ground is in the way - dig it out first, or build higher". A wall is refused where the room has not been dug to the wall's height.
+- **Digging and filling are as they were,** and worth knowing: the shovel digs soft ground and, with its second use, puts ground back; the pickaxe goes through rock; a shaft goes as deep as you like to dig it, and from its foot you can dig sideways - the ground above stays where it is. Filling is paid for in the ground you carry, so what you dug by mistake goes back. The ground a building stands on cannot be dug out from under it.
 
 ## On a server
 
-- The animals are the server's, as before: it places them, moves them, decides what is hurt and what dies, and gives what a carcass yields - once, to one player.
-- Each player has a full place's worth of animals about them. Before, one planet had 48 animals for everyone on it together.
-- A bird in the air is in the same air for every player.
+- **A world with a lot of digging reaches everyone.** When a player joined, the server could say more at once than the connection would take, and what did not fit was lost without a word - with enough dug ground in a world, a joining player could be left with none of it. Now nothing is lost: what cannot go at once waits its turn and goes in order.
+- Every placement, removal, door and dig is still the server's decision; the preview is only a preview.
+- What is built and what is dug survives the server being stopped and started, and is the same for every player. A door opened by one player is open for the other.
 
-## Fixed
+## Playing alone
 
-- A reindeer could turn up in deer country (and a deer in the cold), wrong in name, colour, size and yield.
-- On a server, a player's surroundings could hold more animals, and more that hunt, than a place is meant to.
+- **Play alone** on the multiplayer screen is this same builder and this same ground: the game runs the server on your own computer, saves when you leave, and has your world as you left it when you come back. Everything above applies to it.
 
 ## Known limits
 
-- An animal that is hit flinches and flashes; the animal models have no hit animation of their own.
-- The crocodile keeps to the bank: it does not swim.
-- The seal, the beaver, the walrus and the penguin are shore animals and do not swim either.
-- There is one small fish for every water, fresh and salt.
-- Farm and household animals are not in this update.
-- Unchanged from 0.6.4-alpha: typing needs a keyboard; a controller's buttons are a fixed layout; Windows still shows "unknown publisher" for the game and the launcher.
+- **NEW GAME's builder is unchanged.** A game started from NEW GAME on the title screen uses a different, older builder (drawn walls, rectangle floors and roofs, Quick Roof). None of this update's fixes apply to it, and it still refuses to build over a hollow or a tunnel. To build with everything in these notes on your own, use Play alone.
+- A roof can still be placed over a floor that has no walls.
+- A wall on a floor's edge always faces outward from that floor; it cannot be flipped.
+- A group of the build menu shows ten pieces to the number keys; the rest are reached with the wheel or the pointer.
+- There is no ladder or stair that follows a shaft down: a deep room is reached by the way you dug to it.
+- Ceilings do not fall and need no supports.
+- A game older than 0.6.6 on a 0.6.6 server previews with the old rules: its preview can show a foundation in a hollow at the old height, and the server then places it on the dug floor.
+- Unchanged from 0.6.5-alpha: small ponds can hold no fish; typing needs a keyboard; Windows still shows "unknown publisher" for the game and the launcher.
 
 The dedicated server is not a public download.
